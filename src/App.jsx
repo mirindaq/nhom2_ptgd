@@ -1,15 +1,9 @@
-import Content from "./components/Content/Content";
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
+import "bootstrap/dist/css/bootstrap.min.css";
+import useRoute from "./routes/useRoute";
 
 function App() {
-  return (
-    <>
-      <Header />
-      <Content />
-      <Footer />
-    </>
-  );
+  const object = useRoute();
+  return <>{object}</>;
 }
 
 export default App;
