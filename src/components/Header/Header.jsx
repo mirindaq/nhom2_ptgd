@@ -25,12 +25,14 @@ export default function Header() {
           </ul>
         </div>
 
-        <div className="recipe-box">
-          <span className="text">Your Recipe Box</span>
-        </div>
+        <div className="information-box">
+          <div className="recipe-box">
+            <span className="text">Your Recipe Box</span>
+          </div>
 
-        <div className="avatar-container">
-          <img src="/images/avatar.png" alt="Avatar" />
+          <div className="avatar-container">
+            <img src="/images/avatar.png" alt="Avatar" />
+          </div>
         </div>
       </div>
     </>
