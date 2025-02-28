@@ -4,7 +4,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100vw;
 }
 
 .header-logo {
@@ -87,4 +86,9 @@
   max-width: 3.5rem;
   border-radius: 9999px;
   object-fit: cover;
+}
+
+.information-box {
+  display: flex;
+  gap: 20px;
 }
