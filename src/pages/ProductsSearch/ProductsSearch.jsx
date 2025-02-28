@@ -2,6 +2,7 @@ import React from "react";
 import FoodBox from "../../components/FoodBox/FoodBox";
 import foodData from "../../data/data";
 import Filter from "../../components/Filters/Filter";
+import Pagination from "../../components/Pagination/Pagination";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function ProductsSearch() {
@@ -24,7 +25,9 @@ export default function ProductsSearch() {
         </div>
       ))}
       </div>
-      <div></div>
+      <div className="mb-4">
+      <Pagination/>
+      </div>
     </div>
     
   </div>
