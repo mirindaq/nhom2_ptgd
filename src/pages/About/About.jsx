@@ -75,7 +75,7 @@ export default function About() {
         </Row>
 
         <Row>
-          <div className="subscribe">
+          <div className="subscribeAbout">
             <img src="/images/chefify.png" alt="" />
             <p className="title">Subscribe to Chefify Cooking only</p>
             <p className="descriptionSubs">Enjoy thousands of delicious recipes for every taste, plus advice and inspiration daily.</p>
