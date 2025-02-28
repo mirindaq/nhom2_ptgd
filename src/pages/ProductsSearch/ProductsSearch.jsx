@@ -7,7 +7,7 @@ import { foodData } from "../../data/data";
 
 export default function ProductsSearch() {
   return (
-    <div className="d-flex container mt-5">
+    <div className="d-flex container my-0 pt-5">
       <div>
         <Filter />
       </div>

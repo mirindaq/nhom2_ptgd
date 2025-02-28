@@ -9,7 +9,7 @@ export default function FoodBox({ image, title, time }) {
       className="foodBox card shadow-sm border-0 rounded-4"
       style={{ width: "100%" }}
     >
-      <img src={image} className=" card-img-top rounded-top-4" alt={title} />
+      <img src={image} className="card-img-top rounded-top-4 object-fit-cover " alt={title} />
       <div className="card-body">
         <div className="d-flex">
           <h5 className="card-title fw-bold">{title}</h5>

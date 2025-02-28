@@ -11,7 +11,7 @@ import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 export default function About() {
   return (
     <>
-      <div className="main">
+      <div className="main py-5">
         <Breadcrumb first={"Home"} second={"About"} />
         <Row>
           <Col>

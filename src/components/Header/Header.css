@@ -42,16 +42,8 @@
   height: 100%;
   color: #6b7280;
   font-weight: 400;
-}
-
-.navigation-container li {
-  cursor: pointer;
-  padding: 0px 15px;  
-  transition: color 0.3s;
-}
-
-.navigation-container li:hover {
-  color: #374151;
+  margin: 0px;
+  gap: 15px;
 }
 
 .recipe-box {
@@ -91,4 +83,9 @@
 .information-box {
   display: flex;
   gap: 20px;
+}
+
+.active-link {
+  font-weight: bold;
+  color: #374151;
 }

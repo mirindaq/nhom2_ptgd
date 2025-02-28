@@ -10,7 +10,7 @@ export default function FoodWithAuthorBox(props) {
         <div className="food-card-left">
           <img
             src={foodData.image}
-            className="food-card-img"
+            className="food-card-img "
             alt={foodData.title}
           />
         </div>

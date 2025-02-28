@@ -4,7 +4,7 @@ import Filter from "../../components/Filters/Filter.jsx";
 
 export default function Products() {
   return (
-    <div className="container">
+    <div className="container  my-0 pt-5 pb-5">
       {/* <aside className="filters">
         <h3>Filters</h3>
 

@@ -1,37 +1,37 @@
 // data.js
 export const foodData = [{
     id: 1,
-    image: "/images/Image72.png",
+    image: "/images/image76.png",
     title: "Salad with cabbage and shrimp",
     time: "32 minutes"
 },
 {
     id: 2,
-    image: "/images/Image72.png",
+    image: "/images/image71.png",
     title: "Salad with cabbage and shrimp",
     time: "32 minutes"
 },
 {
     id: 3,
-    image: "/images/Image72.png",
+    image: "/images/image73.png",
     title: "Salad with cabbage and shrimp",
     time: "32 minutes"
 },
 {
     id: 4,
-    image: "/images/Image72.png",
+    image: "/images/image75.png",
     title: "Salad with cabbage and shrimp",
     time: "32 minutes"
 },
 {
     id: 5,
-    image: "/images/Image72.png",
+    image: "/images/image71.png",
     title: "Salad with cabbage and shrimp",
     time: "32 minutes"
 },
 {
     id: 6,
-    image: "/images/Image72.png",
+    image: "/images/image76.png",
     title: "Salad with cabbage and shrimp",
     time: "32 minutes"
 },
@@ -43,13 +43,13 @@ export const foodData = [{
 },
 {
     id: 8,
-    image: "/images/Image72.png",
+    image: "/images/image73.png",
     title: "Salad with cabbage and shrimp",
     time: "32 minutes"
 },
 {
     id: 9,
-    image: "/images/Image72.png",
+    image: "/images/image75.png",
     title: "Salad with cabbage and shrimp",
     time: "32 minutes"
 },
@@ -58,7 +58,7 @@ export const foodData = [{
 export const foodWithPersonData = [
     {
         id: 1,
-        image: "/images/Image72.png",
+        image: "/images/image76.png",
         title: "Stuffed sticky rice ball",
         time: "34 minutes",
         author: "Jennifer King",
@@ -67,7 +67,7 @@ export const foodWithPersonData = [
     },
     {
         id: 2,
-        image: "/images/Image72.png",
+        image: "/images/image71.png",
         title: "Spicy Noodles",
         time: "25 minutes",
         author: "Michael Lee",
@@ -76,7 +76,7 @@ export const foodWithPersonData = [
     },
     {
         id: 3,
-        image: "/images/Image72.png",
+        image: "/images/image73.png",
         title: "Grilled Salmon",
         time: "40 minutes",
         author: "Sophia Martinez",
@@ -85,7 +85,7 @@ export const foodWithPersonData = [
     },
     {
         id: 4,
-        image: "/images/Image72.png",
+        image: "/images/image75.png",
         title: "Vegetable Curry",
         time: "30 minutes",
         author: "Raj Patel",
