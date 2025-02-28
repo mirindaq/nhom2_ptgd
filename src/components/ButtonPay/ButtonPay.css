@@ -1,11 +1,11 @@
-button {
+.btnSubs {
     width: 95%;
     height: 50px;
     border-radius: 15px 15px 15px 15px;
     margin-bottom: 20px;
 }
 
-img {
+.imgBtnSubs {
     margin-right: 15px;
     padding-bottom: 2px;
 }
@@ -16,7 +16,7 @@ img {
     border: 0;
 }
 
-.notpay {
+.notPay {
     background-color: white;
     color: #F44B87;
     border: 0;
