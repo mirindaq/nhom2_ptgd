@@ -5,7 +5,7 @@ import './FoodBox.css'
 
 export default function FoodBox({ image, title, time }) {
   return (
-    <div className="foodBox card shadow-sm border-0 rounded-4" style={{ width: '20rem' }}>
+    <div className="foodBox card shadow-sm border-0 rounded-4" style={{ width: '19rem' }}>
       <img src={image} className=" card-img-top rounded-top-4" alt={title} />
       <div className="card-body">
         <div className="d-flex">
@@ -16,7 +16,6 @@ export default function FoodBox({ image, title, time }) {
         </div>
         <div className="mt-2">
           <span className="badge text-minutes">{time}</span>
-          
         </div>
       </div>
     </div>

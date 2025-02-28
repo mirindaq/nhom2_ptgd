@@ -1,3 +1,5 @@
+import SectionHomepage from "../../components/SectionHomepage/SectionHomepage";
+import foodData from "../../data/data";
 import "./Homepage.css";
 import Image from "react-bootstrap/Image";
 
@@ -33,6 +35,17 @@ export default function Homepage() {
           </div>
         </div>
       </div>
+      <SectionHomepage
+        foodData={foodData}
+        title={"This Summer Recipes"}
+        des={" We have all independence Day sweets covered."}
+      />
+      <SectionHomepage
+        foodData={foodData}
+        title={"Recipes With Videos"}
+        des={"Cooking Up Culinary Creations with Step-by-Step Videos."}
+      />
+   
     </div>
   );
 }
