@@ -3,7 +3,7 @@
   color: white;
 }
 
-.footer .container {
+.footer .footer-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   padding: 2.75rem 0;
