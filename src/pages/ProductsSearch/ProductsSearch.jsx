@@ -1,8 +1,9 @@
 import React from "react";
 import FoodBox from "../../components/FoodBox/FoodBox";
-import foodData from "../../data/data";
 import Filter from "../../components/Filters/Filter";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Pagination from "../../components/Pagination/Pagination";
+import { foodData } from "../../data/data";
 
 export default function ProductsSearch() {
   return (
@@ -12,7 +13,9 @@ export default function ProductsSearch() {
       </div>
       <div className="mt-0">
         <div className="d-flex align-items-center justify-content-between">
-          <h1 style={{ fontWeight: "bold" }}>Salad (32)</h1>
+          <h2 style={{ fontWeight: "bold", marginBottom: "20px" }}>
+            Salad (32)
+          </h2>
           <div className="dropdown">
             <button
               className="btn btn-outline-secondary dropdown-toggle d-flex justify-content-between align-items-center text-start"
@@ -30,7 +33,9 @@ export default function ProductsSearch() {
             </div>
           ))}
         </div>
-        <div></div>
+        <div>
+          <Pagination />
+        </div>
       </div>
     </div>
   );

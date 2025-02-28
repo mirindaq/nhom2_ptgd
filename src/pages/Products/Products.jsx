@@ -1,6 +1,6 @@
 import "./Products.css";
 
-import Filter from "../../components/Filters/Filter.jsx"
+import Filter from "../../components/Filters/Filter.jsx";
 
 export default function Products() {
   return (
@@ -78,9 +78,9 @@ export default function Products() {
         <button className="apply-btn">Apply</button>
       </aside> */}
       <div>
-      <Filter />
+        <Filter />
       </div>
-      <main className="main-content">
+      <di className="main-content">
         <div className="no-results">
           <h2>Sorry, no results found for "cakescascsa"</h2>
           <img src="/images/result.png" alt="No results found" />
@@ -93,8 +93,7 @@ export default function Products() {
             <span>Healthy Food</span>
           </div>
         </div>
-      </main>
+      </di>
     </div>
   );
 }
-

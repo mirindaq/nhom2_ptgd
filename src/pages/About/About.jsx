@@ -1,30 +1,27 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "./About.css"
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import { Link } from "react-router";
-import { path } from "../../constants/path";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./About.css";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import ButtonPay from "../../components/ButtonPay/ButtonPay";
 import AccessSubs from "../../components/AccessSubs/AccessSubs";
 import OptionSubs from "../../components/OptionSubs/OptionSubs";
+import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 
 export default function About() {
   return (
     <>
       <div className="main">
-        <Row>
-          <div className="pathToAbout">
-            <Link to = {path.homepage} className="linkToHomepage">Homepage</Link>
-            <Link to = {path.about} className="linkToAbout"> &gt; About</Link>
-          </div>
-        </Row>
-
+        <Breadcrumb first={"Home"} second={"About"} />
         <Row>
           <Col>
             <div className="foodInfor">
-              <p className="title-top">This recipe is exclusively available to subscribes</p>
-              <p className="title-bottom">Join now to access effortless, hassle-free recipes</p>
+              <p className="title-top">
+                This recipe is exclusively available to subscribes
+              </p>
+              <p className="title-bottom">
+                Join now to access effortless, hassle-free recipes
+              </p>
               <ul>
                 <li>
                   <img src="/images/tick.svg" alt="" />
@@ -44,13 +41,23 @@ export default function About() {
                 </li>
               </ul>
               <p className="price">0.25USD / Week</p>
-              <p className="promotion">Billed as $1 every 4 weeks for the first year</p>
-              <ButtonPay pay = {true} src="/images/pay.svg" text="Subscribe Now"></ButtonPay>
-              <ButtonPay pay = {false} src="" text="Cancel or Pause anytime"></ButtonPay>
+              <p className="promotion">
+                Billed as $1 every 4 weeks for the first year
+              </p>
+              <ButtonPay
+                pay={true}
+                src="/images/pay.svg"
+                text="Subscribe Now"
+              ></ButtonPay>
+              <ButtonPay
+                pay={false}
+                src=""
+                text="Cancel or Pause anytime"
+              ></ButtonPay>
             </div>
           </Col>
           <Col>
-            <img src="/images/dish.png" alt="" className="dish"/>
+            <img src="/images/dish.png" alt="" className="dish" />
           </Col>
         </Row>
 
@@ -59,16 +66,28 @@ export default function About() {
             <p className="title">An All Access subscription includes</p>
             <Row>
               <Col>
-                <AccessSubs title="Cooking" text="Enjoy recipes, advice and inspirator for any occasion"></AccessSubs>
+                <AccessSubs
+                  title="Cooking"
+                  text="Enjoy recipes, advice and inspirator for any occasion"
+                ></AccessSubs>
               </Col>
               <Col>
-                <AccessSubs title="Wirecutter" text="Explore independent reviews for thousands of products"></AccessSubs>
+                <AccessSubs
+                  title="Wirecutter"
+                  text="Explore independent reviews for thousands of products"
+                ></AccessSubs>
               </Col>
               <Col>
-                <AccessSubs title="Games" text="Unwind with Spelling Bee, Wordle, The Crossword"></AccessSubs>
+                <AccessSubs
+                  title="Games"
+                  text="Unwind with Spelling Bee, Wordle, The Crossword"
+                ></AccessSubs>
               </Col>
               <Col>
-                <AccessSubs title="The Athletic" text="Discover in-depth personalized sports jourmalism"></AccessSubs>
+                <AccessSubs
+                  title="The Athletic"
+                  text="Discover in-depth personalized sports jourmalism"
+                ></AccessSubs>
               </Col>
             </Row>
           </div>
@@ -78,12 +97,31 @@ export default function About() {
           <div className="subscribeAbout">
             <img src="/images/chefify.png" alt="" />
             <p className="title">Subscribe to Chefify Cooking only</p>
-            <p className="descriptionSubs">Enjoy thousands of delicious recipes for every taste, plus advice and inspiration daily.</p>
-            <OptionSubs src = "/images/radio_check.png" text = "$2/month (Billed every 4 weeks)"></OptionSubs>
-            <OptionSubs src = "/images/radio_uncheck.png" text = "$20/year (Billed one annually)"></OptionSubs>
+            <p className="descriptionSubs">
+              Enjoy thousands of delicious recipes for every taste, plus advice
+              and inspiration daily.
+            </p>
+            <OptionSubs
+              src="/images/radio_check.png"
+              text="$2/month (Billed every 4 weeks)"
+            ></OptionSubs>
+            <OptionSubs
+              src="/images/radio_uncheck.png"
+              text="$20/year (Billed one annually)"
+            ></OptionSubs>
             <p className="space"></p>
-            <ButtonPay pay = {true} src="/images/pay.svg" text="Subscribe Now" after = {true}></ButtonPay>
-            <ButtonPay pay = {false} src="" text="Cancel or Pause anytime" after = {true}></ButtonPay>
+            <ButtonPay
+              pay={true}
+              src="/images/pay.svg"
+              text="Subscribe Now"
+              after={true}
+            ></ButtonPay>
+            <ButtonPay
+              pay={false}
+              src=""
+              text="Cancel or Pause anytime"
+              after={true}
+            ></ButtonPay>
             <p className="space"></p>
           </div>
         </Row>

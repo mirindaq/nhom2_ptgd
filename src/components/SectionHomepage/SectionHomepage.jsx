@@ -8,7 +8,7 @@ export default function SectionHomepage(props) {
     <>
       <div
         className="w-100 d-flex flex-column justify-content-center align-items-center bg-white"
-        style={{ padding: "80px 0px 50px 0px" }}
+        style={{ padding: "80px 0px 20px 0px" }}
       >
         <h2 className="title">{title}</h2>
         <span className="description">

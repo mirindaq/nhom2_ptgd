@@ -1,5 +1,6 @@
 import SectionHomepage from "../../components/SectionHomepage/SectionHomepage";
-import foodData from "../../data/data";
+import SectionHomepageDetail from "../../components/SectionHomepageDetail/SectionHomepageDetail";
+import { foodData, foodWithPersonData } from "../../data/data";
 import "./Homepage.css";
 import Image from "react-bootstrap/Image";
 
@@ -45,7 +46,14 @@ export default function Homepage() {
         title={"Recipes With Videos"}
         des={"Cooking Up Culinary Creations with Step-by-Step Videos."}
       />
-   
+
+      <SectionHomepageDetail
+        foodWithAuthorData={foodWithPersonData}
+        title={"Editor's pick"}
+        des={
+          "Curated Culinary Delights: Handpicked Favorites by Our Expert Editors!"
+        }
+      />
     </div>
   );
 }
