@@ -6,7 +6,7 @@ import Image from "react-bootstrap/Image";
 export default function Homepage() {
   return (
     <div>
-      <div classNameName="box-background">
+      <div className="box-background">
         <img
           src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2022/4/22/2-16506153173931469354739.jpg"
           alt=""
