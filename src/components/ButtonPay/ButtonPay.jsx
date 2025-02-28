@@ -6,8 +6,8 @@ export default function ButtonPay(props) {
   return (
     <>
       <div>
-        <button className={(pay ? "pay" : "notpay") + (after ? " after" : "")}>
-            <img src={src} alt="" />
+        <button className={"btnSubs" + (pay ? " pay" : " notPay") + (after ? " after" : "")}>
+            <img className="imgBtnSubs" src={src} alt="" />
             {text}
         </button>
       </div>
