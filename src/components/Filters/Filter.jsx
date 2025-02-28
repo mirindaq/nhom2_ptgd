@@ -76,7 +76,7 @@ export default function Filter() {
           <label>
             <img src="/images/Checkbox 13.png" alt="" />
             <span>
-              <img src="/images/Rating 18.png" alt=""  />
+              <img src="/images/Rating 18.png" alt="" />
             </span>
           </label>
           <label>
@@ -88,7 +88,7 @@ export default function Filter() {
           <label>
             <img src="/images/Checkbox 15.png" alt="" />
             <span>
-              <img src="/images/Rating 19.png" alt=""  />
+              <img src="/images/Rating 19.png" alt="" />
             </span>
           </label>
           <label>
