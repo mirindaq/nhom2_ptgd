@@ -1,35 +1,42 @@
 import React from "react";
 import FoodBox from "../../components/FoodBox/FoodBox";
-import foodData from "../../data/data";
 import Filter from "../../components/Filters/Filter";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Pagination from "../../components/Pagination/Pagination";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { foodData } from "../../data/data";
 
 export default function ProductsSearch() {
   return (
-    <div className="d-flex container mt-5">
+    <div className="d-flex container my-0 pt-5">
       <div>
-    <Filter/>
-    </div>
-    <div className="mt-0">
-      <div className="d-flex align-items-center justify-content-between">
-      <h1 style={{ fontWeight: 'bold' }}>Salad (32)</h1>
-      <div className="dropdown">
-      <button className="btn btn-outline-secondary dropdown-toggle d-flex justify-content-between align-items-center text-start" type="button" style={{ width: "200px", opacity: 0.9 }}>A - Z</button>
+        <Filter />
       </div>
-      </div>
-      <div className="row justify-content-center">
-      {foodData.map((food) => (
-        <div key={food.id} className="col-md-4 mb-4">
-          <FoodBox image={food.image} title={food.title} time={food.time} />
+      <div className="mt-0">
+        <div className="d-flex align-items-center justify-content-between">
+          <h2 style={{ fontWeight: "bold", marginBottom: "20px" }}>
+            Salad (32)
+          </h2>
+          <div className="dropdown">
+            <button
+              className="btn btn-outline-secondary dropdown-toggle d-flex justify-content-between align-items-center text-start"
+              type="button"
+              style={{ width: "200px", opacity: 0.9 }}
+            >
+              A - Z
+            </button>
+          </div>
         </div>
-      ))}
-      </div>
-      <div className="mb-4">
-      <Pagination/>
+        <div className="row justify-content-between">
+          {foodData.map((food) => (
+            <div key={food.id} className="col-md-4 mb-4">
+              <FoodBox image={food.image} title={food.title} time={food.time} />
+            </div>
+          ))}
+        </div>
+        <div>
+          <Pagination />
+        </div>
       </div>
     </div>
-    
-  </div>
-  )
+  );
 }
