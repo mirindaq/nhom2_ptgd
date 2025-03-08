@@ -2,6 +2,7 @@ import React from "react";
 import "./Header.css";
 import { Link, NavLink } from "react-router";
 import { path } from "../../constants/path";
+import ShoppingCart from "../ShoppingCart/ShoppingCart";
 
 export default function Header() {
   return (
@@ -9,7 +10,7 @@ export default function Header() {
       <div className="header-container">
         <div className="header-logo">
           <Link to={path.homepage}>
-            <img src="/images/chefify.png" style={{width: "100%"}} />
+            <img src="/images/chefify.png" style={{ width: "100%" }} />
           </Link>
         </div>
         <div className="search-container">
@@ -53,7 +54,9 @@ export default function Header() {
           <div className="recipe-box">
             <span className="text">Your Recipe Box</span>
           </div>
-
+          <div>
+            <ShoppingCart />
+          </div>
           <div className="avatar-container">
             <img src="/images/avatar.png" alt="Avatar" />
           </div>

@@ -17,7 +17,7 @@ export default function SectionHomepage(props) {
         <div className="row d-flex justify-content-center align-items-center w-75">
           {foodData.slice(0, 4).map((food) => (
             <div key={food.id} className="col-md-3 mb-4">
-              <FoodBox image={food.image} title={food.title} time={food.time} />
+              <FoodBox product={food} />
             </div>
           ))}
         </div>

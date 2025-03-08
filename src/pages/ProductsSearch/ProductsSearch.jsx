@@ -29,7 +29,7 @@ export default function ProductsSearch() {
         <div className="row justify-content-between">
           {foodData.map((food) => (
             <div key={food.id} className="col-md-4 mb-4">
-              <FoodBox image={food.image} title={food.title} time={food.time} />
+              <FoodBox product={food} />
             </div>
           ))}
         </div>

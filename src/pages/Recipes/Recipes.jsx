@@ -5,9 +5,15 @@ import Profile from "../../components/Profile/Profile";
 import TabNav from "../../components/TabNav/TabNav";
 import FoodBox from "../../components/FoodBox/FoodBox";
 import { foodData } from "../../data/data";
+import { useCart } from "../../hooks/CartContext";
 
 export default function Recipes() {
   const data = foodData;
+  const { cart } = useCart();
+
+  useEffect(() => {
+    console.log("Updated cart:", cart);
+  }, [cart]);
 
   return (
     <div className="" style={{ padding: "50px 180px" }}>
@@ -18,7 +24,7 @@ export default function Recipes() {
         <div className="row justify-content-center">
           {data.slice(0, 8).map((food) => (
             <div key={food.id} className="col-md-3 mb-3">
-              <FoodBox image={food.image} title={food.title} time={food.time} />
+              <FoodBox product={food} />
             </div>
           ))}
         </div>
