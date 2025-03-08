@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Pagination from "../../components/Pagination/Pagination";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import Profile from "../../components/Profile/Profile";
@@ -7,6 +7,8 @@ import FoodBox from "../../components/FoodBox/FoodBox";
 import { foodData } from "../../data/data";
 
 export default function Recipes() {
+  const data = foodData;
+
   return (
     <div className="" style={{ padding: "50px 180px" }}>
       <Breadcrumb first={"Home"} second={"Your Recipe Box"} />
@@ -14,7 +16,7 @@ export default function Recipes() {
         <Profile></Profile>
         <TabNav></TabNav>
         <div className="row justify-content-center">
-          {foodData.slice(0, 8).map((food) => (
+          {data.slice(0, 8).map((food) => (
             <div key={food.id} className="col-md-3 mb-3">
               <FoodBox image={food.image} title={food.title} time={food.time} />
             </div>

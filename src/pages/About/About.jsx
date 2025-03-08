@@ -63,7 +63,7 @@ export default function About() {
 
         <Row>
           <div className="accessSubs">
-            <p className="title">An All Access subscription includes</p>
+            <p className="title mb-5">An All Access subscription includes</p>
             <Row>
               <Col>
                 <AccessSubs

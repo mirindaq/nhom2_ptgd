@@ -11,7 +11,7 @@ export default function FoodBox({ image, title, time }) {
     >
       <img src={image} className="card-img-top rounded-top-4 object-fit-cover " alt={title} />
       <div className="card-body">
-        <div className="d-flex">
+        <div className="d-flex justify-content-between">
           <h5 className="card-title fw-bold">{title}</h5>
           <button className="btn btn_favorites">
             <Bookmark className="text_favorites " size={20} />

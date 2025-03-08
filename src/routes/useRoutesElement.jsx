@@ -1,4 +1,4 @@
-import { useRoutes } from "react-router";
+import { Route, Routes, useRoutes } from "react-router";
 import MainLayout from "../layout/MainLayout";
 import About from "../pages/About/About";
 import Products from "../pages/Products/Products";
@@ -7,7 +7,7 @@ import Recipes from "../pages/Recipes/Recipes";
 import { path } from "../constants/path";
 import Homepage from "../pages/Homepage/Homepage";
 
-const useRoute = () => {
+const useRoutesElement = () => {
   const routes = [
     {
       path: path.homepage,
@@ -37,6 +37,18 @@ const useRoute = () => {
     },
   ];
   return useRoutes(routes);
+
+  // return (
+  //   <Routes>
+  //     <Route path={path.homepage} element={<MainLayout />}>
+  //       <Route index element={<Homepage />} />
+  //       <Route path={path.recipes} element={<Recipes />} />
+  //       <Route path={path.products} element={<Products />} />
+  //       <Route path={path.productsSearch} element={<ProductsSearch />} />
+  //       <Route path={path.about} element={<About />} />
+  //     </Route>
+  //   </Routes>
+  // );
 };
 
-export default useRoute;
+export default useRoutesElement;
