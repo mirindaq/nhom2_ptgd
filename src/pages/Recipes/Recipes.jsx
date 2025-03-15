@@ -5,15 +5,8 @@ import Profile from "../../components/Profile/Profile";
 import TabNav from "../../components/TabNav/TabNav";
 import FoodBox from "../../components/FoodBox/FoodBox";
 import { foodData } from "../../data/data";
-import { useCart } from "../../hooks/CartContext";
-
 export default function Recipes() {
   const data = foodData;
-  const { cart } = useCart();
-
-  useEffect(() => {
-    console.log("Updated cart:", cart);
-  }, [cart]);
 
   return (
     <div className="" style={{ padding: "50px 180px" }}>

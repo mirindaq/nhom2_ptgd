@@ -6,7 +6,6 @@ import ProductsSearch from "../pages/ProductsSearch/ProductsSearch";
 import Recipes from "../pages/Recipes/Recipes";
 import { path } from "../constants/path";
 import Homepage from "../pages/Homepage/Homepage";
-import Cart from "../pages/Cart/Cart";
 
 const useRoutesElement = () => {
   const routes = [
@@ -33,10 +32,6 @@ const useRoutesElement = () => {
         {
           path: path.about,
           element: <About />,
-        },
-        {
-          path: "/cartcart",
-          element: <Cart />,
         },
       ],
     },

@@ -6,7 +6,7 @@ export default function MainLayout() {
   return (
     <>
       <Header />
-      <div style={{backgroundColor: "white"}}>
+      <div style={{ backgroundColor: "white" }}>
         <Outlet />
       </div>
       <Footer />
